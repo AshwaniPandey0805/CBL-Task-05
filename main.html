@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="select-level">
+            <h1>Select Quiz Level</h1>
+                <form id="levelForm">
+                    <input type="radio" id="easy" name="level" value="easy">
+                    <label for="easy">Easy</label><br>
+                    
+                    <input type="radio" id="medium" name="level" value="medium">
+                    <label for="medium">Medium</label><br>
+                    
+                    <input type="radio" id="hard" name="level" value="hard">
+                    <label for="hard">Hard</label><br><br>
+                    
+                    <button type="submit" id="submit-btn">Start Quiz</button>
+                </form>
+        </div>
+        <div class="app">
+            <div class="heading">
+                <h1></h1>
+                <span>1/10</span>
+            </div>
+            <div class="quiz">
+                <h2 id="question">Question goes</h2>
+                <div id="timer">Timer</div>
+                <div id="answer-button" >
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                
+                <div class="action-btn">
+                    <div class="one">
+                        <button id="next-btn">Next</button>
+                    </div>
+                    <div class="two">
+                        <button id="exit-btn">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- <script src="./dataSet.js"></script> -->
+</body>
+</html>
